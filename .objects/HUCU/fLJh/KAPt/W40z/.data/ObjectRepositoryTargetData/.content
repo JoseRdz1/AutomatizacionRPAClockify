@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zTY20QCfbkKOgnRj_dppDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/login" CVScreenId="b0616fb6-8ecb-41a0-a776-4a3d181586c0" CvElementArea="1221, 704, 428, 54" CvTextArea="1344, 720, 179, 20" CvTextArgument="Continue with email" CvType="Button" DesignTimeRectangle="1225, 706, 420, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="2123d89f-c7e8-4f86-a6ab-fc1d30f37c07" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6f5a8923b34ebc40de65a3329375485f.jpg" xmlns="">0EhqjHdxf70WT3YExv1mvbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

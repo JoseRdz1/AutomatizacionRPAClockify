@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Open and interact with the Clockify login pag",
+  "Type": "Screen",
+  "Id": "KAPtK7kLhEW5ba55mCT-lQ",
+  "Reference": "9mPpMZYlwEuYjYN-JheQ0A/KAPtK7kLhEW5ba55mCT-lQ",
+  "ParentRef": "9mPpMZYlwEuYjYN-JheQ0A/fLJhQ1EOYkGLA1Z0TNRLHg",
+  "Created": "2026-02-28T22:56:05.7504468Z",
+  "Updated": "2026-02-28T22:56:05.7504468Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

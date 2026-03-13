@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fDtxPJ1tLkGoZQJn8VDyuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/login" CVScreenId="30646165-6525-47cd-8140-a707f056768c" CvElementArea="1223, 642, 423, 54" CvType="InputBox" DesignTimeRectangle="1225, 644, 420, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="acd2f77e-a5eb-4f07-89c1-4b759eac1296" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="36a23e5bc87d2bd14306ce6a238709c6.jpg" xmlns="">0H34pYp-uf0KvA6YQ-wvyDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
