@@ -96,11 +96,17 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="857,2207" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="857,2710" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_Destino" />
+      <Variable x:TypeArguments="x:Boolean" Name="existeCarpeta" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Destino">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="&quot;C:\ReporteLimpio&quot;" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Origen" />
       <Variable x:TypeArguments="x:String" Name="str_TareaProcesada" />
+      <Variable x:TypeArguments="x:String" Name="rutaReportes" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -194,7 +200,7 @@
                       </Sequence>
                     </ui:IfElseIfV2.Then>
                   </ui:IfElseIfV2>
-                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[str_TareaProcesada]" DataTable="[dt_Destino]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="515,216" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_TareaProcesada}]" DataTable="[dt_Destino]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="515,216" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                 </Sequence>
               </ui:IfElseIfV2.Else>
               <ui:IfElseIfV2.ElseIfs>
@@ -215,6 +221,30 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt_Destino]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="587,270" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Detailed Report" WorkbookPath="[&quot;C:\ReporteLimpio\Reporte_Final_&quot; + Now.ToString(&quot;dd_MM_yyyy_HHmm&quot;) + &quot;.xlsx&quot;]" />
+    <ui:FolderExistsX DisplayName="Folder Exists" Exists="[existeCarpeta]" sap:VirtualizedContainerService.HintSize="587,167" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="C:\ReporteLimpio" />
+    <ui:IfElseIfV2 Condition="[existeCarpeta = False]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="587,606" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
+      <ui:IfElseIfV2.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </ui:IfElseIfV2.Else>
+      <ui:IfElseIfV2.ElseIfs>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+      </ui:IfElseIfV2.ElseIfs>
+      <ui:IfElseIfV2.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt_Destino]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,274" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Detailed Report" WorkbookPath="[rutaReportes + &quot;\Reporte_Final_&quot; + Now.ToString(&quot;dd_MM_yyyy_HHmm&quot;) + &quot;.xlsx&quot;]" />
+        </Sequence>
+      </ui:IfElseIfV2.Then>
+    </ui:IfElseIfV2>
   </Sequence>
 </Activity>
