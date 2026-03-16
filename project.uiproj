@@ -1,0 +1,6 @@
+{
+  "Name": "Integradora",
+  "ProjectType": "Process",
+  "Description": "Proceso de transformacion y formateo (Limpieza 2)",
+  "MainFile": "Main.xaml"
+}
