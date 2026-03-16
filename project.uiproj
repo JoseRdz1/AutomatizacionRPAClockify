@@ -1,0 +1,6 @@
+{
+  "Name": "Limpieza Clockify",
+  "ProjectType": "Process",
+  "Description": "Realizar la limpieza, parte 1",
+  "MainFile": "Main.xaml"
+}
