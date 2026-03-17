@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="3OpczNYjo0ugwC0LxGkYig" Reference="9mPpMZYlwEuYjYN-JheQ0A/KAPtK7kLhEW5ba55mCT-lQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="lsO7UDjtRkqkcoZ5VhD79Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQTSURBVHhe7VtNbtNAFLYaV2IZiQsg9QKIE1Q9QdULtOIGPQHtCaAnKKyCXUQqwYZNg0Q3bEgX3XTlDSzYYKmekP7QGn1pp3GeJ3bs98YkNp/0SY3neer3zZs3b5yM48wA9yBadT31cslT/ZYfhS1PxXNJPJuvei1f7be883XqRyG0u3F76WDwYq4dzmfQ8tUW9S0Xy756Oro53eGiMnjUGT6hfhrRejfcNHRQEw43qb8TqLfzmlNEQIikjetJTHHqv1OzOZ/HwOmG7bHzvtoyGNWarhftNHX0NcN758/XDY2NoNuJVhH++7ShKXTfRq8gQI82NIWup/oQYJFLXS5DJEB60Rofvx/Ea71hvHd2FX/++ScO1E2cBD7jOto3ji9G9rQPaVYigHY6vLqdcHgW4D7anyStCrDycRC/Ca6pT4WxcTxM9S1FawI8/3pRasRNQF+0fylaEWD39JL6kALEOQlvRhECHn6/Hs1/KlqgbuOVD+NcgLyw3b8Y/Y/k9bIUFyAr5OEc5jRyAr0vSbTDQTiaTIT4++TXOHFCHG6iFBUga+T3zq5ZD0ud18gTM49iAmCemoBR4j7kNOcB7jQQEQDZnq7pAJ2/ZZjlvERyFBHANO8XwXmQLQBG34RFcB5kC2AafSQ8aleEVTkPsgWg6zY+c0cfNYEJ0s6DLAE2vqQzPyKC2hUlBUR99ul3yk6CLAFQ1FBwlzwQFaGGTedBlgDJB9WgNmWoN1GYCjadB1kCBIPJRAVBqE0e4SwqSKnavihZAlAc/ig2/2kBJVHbF6WoAEUToCmJ2tz7m/hPBVg7GtIuRJJoEbIEoDkA+3tqk8fd0/FKgr9pu22yBIDDSWDJojazEPOe7vuRFLHM2k6MLAGMdcARP4STlaDEpiqLLAFM7wAwctSuKCkggq16gCUAQtW0F+AuZaYCy1ZFyBIANG1cuFFA6wMNGyKwBTAtZRI7wqpEYAsAmkJWoqqrQgQRAfCgNBcAeKkx7yKICABufzO/EpdYxrJE4AosJgBoej0G4EHxJQe1L8JpInBLZ1EBQFM+0EA0oHbIiwiMKuzwFXnyOhVBIrrEBQCnRUISyA9YQlFN6rIX99FRpnkEImjbucoBlMlNDhc2XoZqWhMAxGjRDVMZ2HxHYFUATYxgVm7IQpnXbEVYiQCaiAiIgbk/LTKQA9COVQP2tA9pViqAiXBSk7ZVwf8/k8OPBQ0NjaDrq56Dn4vShsbQV/sOfjCcamgMB3cnyxqaB4KH8wI4PGAwqDc7yeN03bDdsEMT49HXuD8rSA1rSWfaGUKEBTWuG5cnQt+AOouQ6/wD7s4Q1iknBI7prGAe7qNhcYXwo9DtRDtONx6fESyDu5Nl569ROs71aXI47Kk+qtvRibAZ8BcYR8yywuriXgAAAABJRU5ErkJggg==" Reference="9mPpMZYlwEuYjYN-JheQ0A/KAPtK7kLhEW5ba55mCT-lQ" Selector="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" Url="https://app.clockify.me/login" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="d314722d102aa277ece96b7fc7539549.jpg" xmlns="">0JfL1yME1D0iN-h7oWL-EuA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Os0NRoqVLU6UtLhn7x6p1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/reports/detailed" CVScreenId="6ca98020-9668-4922-b92a-9ac131df19e7" CvElementArea="1535, 602, 19, 20" CvTextArea="1489, 602, 46, 18" CvTextArgument="Export" CvType="ArrowButton" DesignTimeRectangle="1465, 588, 108, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Export ' parentid='layout-main' tag='DIV' /&gt;" Guid="c1d9670d-7f08-4c62-9334-91bce0d5dd3e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6ca98020-9668-4922-b92a-9ac131df19e7" CvElementArea="1535, 602, 19, 20" CvType="ArrowButton" DesignTimeRectangle="1535, 602, 18, 19" ElementType="ArrowButton" Guid="f63419ee-2283-467d-a0c8-459649bbdcfa" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="901d0366388dce2bd7f6c30d1e7523a7.jpg" xmlns="">0ruOpo0tgTEO7tav0L_vOdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
