@@ -1,0 +1,21 @@
+# --- UiPath / .NET Specific ---
+.local/
+.objects/
+.screenshots/
+.tmh/
+*.log
+*.tmp
+*.dll
+
+# --- Project specific ---
+# Si usan Excel para pruebas locales que no deben subirse
+*.xlsx
+!Template/*.xlsx  # (Opcional) Permite archivos en una carpeta de plantillas
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Backup and Autosave ---
+*.bak
+*.swp
