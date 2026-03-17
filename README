@@ -1,0 +1,41 @@
+🤖 Automatización RPA: Extracción y Procesamiento de Reportes (Clockify a Excel)
+📖 Descripción del Proyecto
+Este repositorio contiene el código fuente de un robot de Automatización Robótica de Procesos (RPA) construido en UiPath. Su objetivo principal es optimizar el flujo de trabajo administrativo mediante la extracción autónoma de reportes detallados de horas desde la plataforma web Clockify y su posterior procesamiento, limpieza y estandarización en Microsoft Excel.
+
+El proyecto garantiza una reducción drástica del tiempo operativo (ejecución total en menos de 3 minutos) y asegura el 100% de la integridad de los datos, eliminando el riesgo de errores humanos en la manipulación de la información.
+
+
+
+🏗️ Arquitectura y Plan de Trabajo (Módulos)
+Para garantizar una integración continua y un desarrollo estructurado bajo el marco de trabajo ágil Scrum, el alcance total del proyecto se dividió en tres módulos funcionales. Cada módulo fue asignado a un desarrollador distinto, operando de manera secuencial:
+
+
+📦 Módulo 1: Extracción y Navegación (Clockify)
+Automatización del inicio de sesión y navegación en la interfaz web de Clockify.
+
+Aplicación de filtros específicos (ej. Proyecto Academy) y descarga del reporte detallado en formato .xlsx.
+
+
+🧹 Módulo 2: Procesamiento y Reglas de Negocio (Limpieza I)
+Depuración inicial del archivo: eliminación de columnas innecesarias (correos) y filas irrelevantes (horas de comida).
+
+Gestión de celdas vacías y generación de un reporte de excepciones para registros en blanco.
+
+Lógica de negocio inicial: identificación de registros "Daily" y asignación de sus IDs.
+
+
+⚙️ Módulo 3: Transformación y Formateo (Limpieza II) — [Aquí puedes poner: Enfoque de este repositorio / Mi contribución]
+Mapeo de Columnas: Evaluación condicional para trasladar información de la columna Task hacia la columna Project cuando la regla de negocio lo requiere.
+
+Etiquetado Específico: Estandarización de nomenclaturas corporativas (ej. cambio de la etiqueta "Entrenamiento" a "Genesis").
+
+Consolidación: Manipulación de datos en memoria (DataTables), versionado y guardado del archivo estandarizado en su directorio final.
+
+
+
+🛠️ Stack Tecnológico y Metodologías
+RPA Engine: UiPath Studio / UiPath Assistant
+
+Procesamiento de Datos: Microsoft Excel (manipulación optimizada vía DataTables en memoria).
+
+Metodologías aplicadas: Scrum (gestión iterativa) y Ciclo de Vida de Desarrollo RPA (Análisis, Diseño, Construcción y Pruebas).
