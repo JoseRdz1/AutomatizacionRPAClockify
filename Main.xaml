@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -23,229 +23,501 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Xml.Serialization</x:String>
-      <x:String>UiPath.Excel</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
-      <x:String>UiPath.Excel.Activities</x:String>
-      <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="857,2837" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1461,8524" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Boolean" Name="existeCarpeta" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_Destino" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_Origen" />
-      <Variable x:TypeArguments="x:String" Name="str_TareaProcesada" />
       <Variable x:TypeArguments="x:String" Name="rutaReportes">
         <Variable.Default>
           <Literal x:TypeArguments="x:String">C:\ReporteLimpio</Literal>
         </Variable.Default>
       </Variable>
+      <Variable x:TypeArguments="x:String" Default="[&quot;Limpieza\Limpieza_Clockify_Reporte_Limpio_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd&quot;) + &quot;.xlsx&quot;]" Name="Rutasalida" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="ContadorBlancos" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="dt_Clockify" />
+      <Variable x:TypeArguments="x:String" Default="[&quot;clockify_reporte.xlsx&quot;]" Name="nombreArchivo" />
+      <Variable x:TypeArguments="x:String" Default="[Environment.CurrentDirectory + &quot;\Descargas\&quot;]" Name="carpetaDescarga" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:Boolean" Name="existeCarpeta" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Origen]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="587,227" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Detailed Report" WorkbookPath="C:\Users\Julian\Downloads\Clockify_Time_Report_Detailed_02_03_2026-08_03_2026.xlsx">
+    <Assign sap:VirtualizedContainerService.HintSize="628,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Microsoft.VisualBasic.Interaction.InputBox("Ingresa tu email","Cuenta Email")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="Seq_Descarga" sap:VirtualizedContainerService.HintSize="628,8326" sap2010:WorkflowViewState.IdRef="Sequence_13">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </ui:ReadRange>
-    <ui:BuildDataTable DataTable="[dt_Destino]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="587,57" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Project&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:BuildDataTable>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Origen]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587,1630" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-      <ui:ForEachRow.Body>
-        <ActivityAction x:TypeArguments="sd:DataRow">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="585,1448" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:IfElseIfV2 Condition="[String.IsNullOrWhiteSpace(CurrentRow(&quot;Task&quot;).ToString)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="551,1384" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
-              <ui:IfElseIfV2.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="549,922" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                    <ui:MultipleAssign.AssignOperations>
-                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                          <ui:AssignOperation.To>
-                            <OutArgument x:TypeArguments="x:String">[str_TareaProcesada]</OutArgument>
-                          </ui:AssignOperation.To>
-                          <ui:AssignOperation.Value>
-                            <InArgument x:TypeArguments="x:String">[CurrentRow("Task").ToString]</InArgument>
-                          </ui:AssignOperation.Value>
-                        </ui:AssignOperation>
+      <Assign sap:VirtualizedContainerService.HintSize="594,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.rutaCompleta]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[carpetaDescarga + nombreArchivo]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open and interact with the Clockify login pag" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="594,2557" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2354" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Codigo_Verificacion" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Text="[Email]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/login" CVScreenId="30646165-6525-47cd-8140-a707f056768c" ContentHash="fDtxPJ1tLkGoZQJn8VDyuQ" CvElementArea="1223, 642, 423, 54" CvType="InputBox" DesignTimeRectangle="1225, 644, 420, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="acd2f77e-a5eb-4f07-89c1-4b759eac1296" InformativeScreenshot="36a23e5bc87d2bd14306ce6a238709c6.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/cBlbTRmoI0GZySFFo_zpHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue with email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/login" CVScreenId="b0616fb6-8ecb-41a0-a776-4a3d181586c0" ContentHash="zTY20QCfbkKOgnRj_dppDw" CvElementArea="1221, 704, 428, 54" CvTextArea="1344, 720, 179, 20" CvTextArgument="Continue with email" CvType="Button" DesignTimeRectangle="1225, 706, 420, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="2123d89f-c7e8-4f86-a6ab-fc1d30f37c07" InformativeScreenshot="6f5a8923b34ebc40de65a3329375485f.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/W40zsIGuOEesTakfBJbJJQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_9">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Codigo_Verificacion]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Microsoft.VisualBasic.Interaction.InputBox("Ingresa Codigo de verificación")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Text="[Codigo_Verificacion]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/login/otp" ContentHash="i8EiJ8Y54EGb6yYVcWlNgw" DesignTimeRectangle="1225, 582, 407, 60" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-auth-login-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-auth-otp-code-input&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;verification-code-input&amp;gt;form&amp;gt;div' tag='DIV' /&gt;" Guid="30bd531a-2512-47db-83f8-aba9bd94f0b6" InformativeScreenshot="4d8e4d41f8c7cfc3fb64d55fea8224e7.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/BAGhjdGZBk6MKcE6B7CyMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reports'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/reports/detailed" CVScreenId="8051b597-7cf9-4da1-b14f-b60e8c95a802" ContentHash="QvZVJJIN1UiMfH7GbEKZUQ" CvTextArea="74, 514, 76, 17" CvTextArgument="REPORTS" CvType="Text" DesignTimeRectangle="75, 510, 75, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Reports' class='cl-nav-link-copy' parentid='cdk-drop-list-1' tag='SPAN' /&gt;" Guid="a8fdb786-a9c9-422d-aaf8-a2d930e081d7" InformativeScreenshot="f1028cb6ec93ee3c5a5afb4c4d72b693.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/CthduMsPrEazL7n8DdgR1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Detailed'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/reports/summary" CVScreenId="7ae1a1d6-3c71-4b17-b6d8-edc564af7e6e" CvElementArea="518, 242, 93, 52" CvTextArea="531, 257, 65, 17" CvTextArgument="Detailed" CvType="Button" DesignTimeRectangle="519, 242, 91, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Detailed' parentid='layout-main' tag='A' /&gt;" Guid="57fc43e5-cc7c-42c7-acc7-f1eff512ad1c" InformativeScreenshot="04af0bdd158175950130cc0c168ceb02.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/reports/detailed" CVScreenId="6ca98020-9668-4922-b92a-9ac131df19e7" ContentHash="Os0NRoqVLU6UtLhn7x6p1g" CvElementArea="1535, 602, 19, 20" CvTextArea="1489, 602, 46, 18" CvTextArgument="Export" CvType="ArrowButton" DesignTimeRectangle="1465, 588, 108, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Export ' parentid='layout-main' tag='DIV' /&gt;" Guid="c1d9670d-7f08-4c62-9334-91bce0d5dd3e" InformativeScreenshot="901d0366388dce2bd7f6c30d1e7523a7.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/ORDqjdUN7Eue0_qec1Tefg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6ca98020-9668-4922-b92a-9ac131df19e7" CvElementArea="1535, 602, 19, 20" CvType="ArrowButton" DesignTimeRectangle="1535, 602, 18, 19" ElementType="ArrowButton" Guid="f63419ee-2283-467d-a0c8-459649bbdcfa" SearchSteps="CV" TargetType="ComputerVisionBased" />
                       </scg:List>
-                    </ui:MultipleAssign.AssignOperations>
-                  </ui:MultipleAssign>
-                  <ui:IfElseIfV2 Condition="[str_TareaProcesada.Contains(&quot;Entrenamiento&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="515,497" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
-                    <ui:IfElseIfV2.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,94" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save as Excel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c07d27a-e397-482b-b057-781ba5ea7b43" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app.clockify.me/reports/detailed" CVScreenId="0c834a23-4ee6-4081-a8fc-f998e1ab6322" CvTextArea="1487, 762, 108, 17" CvTextArgument="Save as Excel" CvType="Text" DesignTimeRectangle="1465, 748, 175, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Save as Excel' class='cl-dropdown-item' parentid='layout-main' tag='A' /&gt;" Guid="f33c0b5f-8d1b-4f62-9d11-cfaf44dcbb68" InformativeScreenshot="255117a5468a0ea56907046ee40707c1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.rutaArchivo]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\Downloads\", "Clockify_Time_Report_Detailed_*.xlsx").OrderByDescending(Function(f) File.GetCreationTime(f)).First()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[GlobalVariablesNamespace.GlobalVariables.rutaCompleta]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[GlobalVariablesNamespace.GlobalVariables.rutaArchivo]" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="3OpczNYjo0ugwC0LxGkYig" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQTSURBVHhe7VtNbtNAFLYaV2IZiQsg9QKIE1Q9QdULtOIGPQHtCaAnKKyCXUQqwYZNg0Q3bEgX3XTlDSzYYKmekP7QGn1pp3GeJ3bs98YkNp/0SY3neer3zZs3b5yM48wA9yBadT31cslT/ZYfhS1PxXNJPJuvei1f7be883XqRyG0u3F76WDwYq4dzmfQ8tUW9S0Xy756Oro53eGiMnjUGT6hfhrRejfcNHRQEw43qb8TqLfzmlNEQIikjetJTHHqv1OzOZ/HwOmG7bHzvtoyGNWarhftNHX0NcN758/XDY2NoNuJVhH++7ShKXTfRq8gQI82NIWup/oQYJFLXS5DJEB60Rofvx/Ea71hvHd2FX/++ScO1E2cBD7jOto3ji9G9rQPaVYigHY6vLqdcHgW4D7anyStCrDycRC/Ca6pT4WxcTxM9S1FawI8/3pRasRNQF+0fylaEWD39JL6kALEOQlvRhECHn6/Hs1/KlqgbuOVD+NcgLyw3b8Y/Y/k9bIUFyAr5OEc5jRyAr0vSbTDQTiaTIT4++TXOHFCHG6iFBUga+T3zq5ZD0ud18gTM49iAmCemoBR4j7kNOcB7jQQEQDZnq7pAJ2/ZZjlvERyFBHANO8XwXmQLQBG34RFcB5kC2AafSQ8aleEVTkPsgWg6zY+c0cfNYEJ0s6DLAE2vqQzPyKC2hUlBUR99ul3yk6CLAFQ1FBwlzwQFaGGTedBlgDJB9WgNmWoN1GYCjadB1kCBIPJRAVBqE0e4SwqSKnavihZAlAc/ig2/2kBJVHbF6WoAEUToCmJ2tz7m/hPBVg7GtIuRJJoEbIEoDkA+3tqk8fd0/FKgr9pu22yBIDDSWDJojazEPOe7vuRFLHM2k6MLAGMdcARP4STlaDEpiqLLAFM7wAwctSuKCkggq16gCUAQtW0F+AuZaYCy1ZFyBIANG1cuFFA6wMNGyKwBTAtZRI7wqpEYAsAmkJWoqqrQgQRAfCgNBcAeKkx7yKICABufzO/EpdYxrJE4AosJgBoej0G4EHxJQe1L8JpInBLZ1EBQFM+0EA0oHbIiwiMKuzwFXnyOhVBIrrEBQCnRUISyA9YQlFN6rIX99FRpnkEImjbucoBlMlNDhc2XoZqWhMAxGjRDVMZ2HxHYFUATYxgVm7IQpnXbEVYiQCaiAiIgbk/LTKQA9COVQP2tA9pViqAiXBSk7ZVwf8/k8OPBQ0NjaDrq56Dn4vShsbQV/sOfjCcamgMB3cnyxqaB4KH8wI4PGAwqDc7yeN03bDdsEMT49HXuD8rSA1rSWfaGUKEBTWuG5cnQt+AOouQ6/wD7s4Q1iknBI7prGAe7qNhcYXwo9DtRDtONx6fESyDu5Nl569ROs71aXI47Kk+qtvRibAZ8BcYR8yywuriXgAAAABJRU5ErkJggg==" InformativeScreenshot="d314722d102aa277ece96b7fc7539549.jpg" Reference="9mPpMZYlwEuYjYN-JheQ0A/KAPtK7kLhEW5ba55mCT-lQ" Selector="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" Url="https://app.clockify.me/login" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <Delay DisplayName="Delay Esperar 5s para descargar" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="594,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+      <Sequence DisplayName="Seq_Limpieza" sap:VirtualizedContainerService.HintSize="594,5388" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="560,4404" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX.Body>
+            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,4325" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File Para excel" sap:VirtualizedContainerService.HintSize="524,4261" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[GlobalVariablesNamespace.GlobalVariables.rutaCompleta]">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,4037" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </Sequence>
-                    </ui:IfElseIfV2.Else>
-                    <ui:IfElseIfV2.ElseIfs>
-                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
-                    </ui:IfElseIfV2.ElseIfs>
-                    <ui:IfElseIfV2.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="513,208" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,144" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
-                          <ui:MultipleAssign.AssignOperations>
-                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:String">[str_TareaProcesada]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:String">Genesis</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
+                        <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="488,174" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Detailed Report&quot;)]" SaveTo="[dt_Clockify]" />
+                        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="[Excel.Sheet(&quot;Detailed Report&quot;).Cell(&quot;G1&quot;)]" DataTable="[dt_Clockify]" DisplayName="Remove Data Column Quitar columna de correos" sap:VirtualizedContainerService.HintSize="488,225" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
+                        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="[Excel.Sheet(&quot;Detailed Report&quot;).Cell(&quot;H1&quot;)]" DataTable="[dt_Clockify]" DisplayName="Remove Data Column Quitar columna te tags" sap:VirtualizedContainerService.HintSize="488,225" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_2" />
+                        <ui:FilterDataTable DataTable="[dt_Clockify]" DisplayName="Filter Data Table Filas de comida" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="488,199" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_Clockify]" SelectColumnsMode="Remove">
+                          <ui:FilterDataTable.Filters>
+                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                              <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTCONTAINS">
+                                <ui:FilterOperationArgument.Column>
+                                  <InArgument x:TypeArguments="x:String">["Task"]</InArgument>
+                                </ui:FilterOperationArgument.Column>
+                                <ui:FilterOperationArgument.Operand>
+                                  <InArgument x:TypeArguments="x:String">["Otros"]</InArgument>
+                                </ui:FilterOperationArgument.Operand>
+                              </ui:FilterOperationArgument>
                             </scg:List>
-                          </ui:MultipleAssign.AssignOperations>
-                        </ui:MultipleAssign>
+                          </ui:FilterDataTable.Filters>
+                          <ui:FilterDataTable.SelectColumns>
+                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                              <x:Null />
+                            </scg:List>
+                          </ui:FilterDataTable.SelectColumns>
+                        </ui:FilterDataTable>
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Clockify]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,1541" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                          <ui:ForEachRow.Body>
+                            <ActivityAction x:TypeArguments="sd2:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1355" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentRow(&quot;Description&quot;).ToString]" />
+                                <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(CurrentRow(&quot;Description&quot;).ToString,&quot;[A-Z]{3}\.[A-Z]{3}\.\d{3}&quot;)]" sap:VirtualizedContainerService.HintSize="452,471" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow("Project")]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Match(CurrentRow("Description").ToString,"[A-Z]{3}\.[A-Z]{3}\.\d{3}").Value]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <If Condition="[String.IsNullOrWhiteSpace(CurrentRow(&quot;Task&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="452,641" sap2010:WorkflowViewState.IdRef="If_1">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow("Task")]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[CurrentRow("Description").ToString]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[ContadorBlancos]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[ContadorBlancos+1]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEachRow.Body>
+                        </ui:ForEachRow>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulo3_FormateoFinal - Invoke Workflow File (Modulo3_FormateoFinal.xaml)" sap:VirtualizedContainerService.HintSize="488,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modulo3_FormateoFinal.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InOutArgument x:TypeArguments="sd2:DataTable" x:Key="in_dt_DatosProcesados">[dt_Clockify]</InOutArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Total registros sin descripción: &quot; + contadorBlancos.ToString]" />
+                        <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt_Clockify]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="488,283" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Detailed Report" WorkbookPath="[Rutasalida]" />
+                        <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="488,961" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None" UseTemplate="True" WorkbookPath="[Rutasalida]">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,737" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="ue:IChartRef" Name="SaveChart" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Report&quot;).Cell(&quot;P1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Registros sin descripción&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Report&quot;).Cell(&quot;Q1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[ContadorBlancos]" />
+                                <ueab:InsertExcelChartX ChartCategory="Pie" ChartHeight="211" ChartType="xlPie" ChartWidth="355" DisplayName="Insert Chart" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="InsertExcelChartX_1" InsertIntoSheet="[Excel.Sheet(&quot;Report&quot;)]" InsertedChart="[SaveChart]" Left="60" Range="[Excel.Sheet(&quot;Report&quot;).Range(&quot;P1:Q1&quot;)]" Top="20" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                        </ueab:ExcelApplicationCard>
                       </Sequence>
-                    </ui:IfElseIfV2.Then>
-                  </ui:IfElseIfV2>
-                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_TareaProcesada}]" DataTable="[dt_Destino]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="515,216" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                </Sequence>
-              </ui:IfElseIfV2.Else>
-              <ui:IfElseIfV2.ElseIfs>
-                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
-              </ui:IfElseIfV2.ElseIfs>
-              <ui:IfElseIfV2.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="549,280" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Vacio&quot;}]" DataTable="[dt_Destino]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="515,216" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                </Sequence>
-              </ui:IfElseIfV2.Then>
-            </ui:IfElseIfV2>
-          </Sequence>
-        </ActivityAction>
-      </ui:ForEachRow.Body>
-    </ui:ForEachRow>
-    <ui:FolderExistsX DisplayName="Folder Exists" Exists="[existeCarpeta]" sap:VirtualizedContainerService.HintSize="587,167" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="C:\ReporteLimpio" />
-    <ui:IfElseIfV2 Condition="[existeCarpeta = False]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="587,463" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
-      <ui:IfElseIfV2.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                </ueab:ExcelApplicationCard>
+              </Sequence>
+            </ActivityAction>
+          </ueab:ExcelProcessScopeX.Body>
+        </ueab:ExcelProcessScopeX>
+        <Sequence DisplayName="Guardado" sap:VirtualizedContainerService.HintSize="560,901" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
+          <ui:FolderExistsX DisplayName="Folder Exists" Exists="[existeCarpeta]" sap:VirtualizedContainerService.HintSize="452,167" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="C:\ReporteLimpio" />
+          <ui:IfElseIfV2 Condition="[existeCarpeta = False]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="452,467" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+            <ui:IfElseIfV2.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </ui:IfElseIfV2.Else>
+            <ui:IfElseIfV2.ElseIfs>
+              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+            </ui:IfElseIfV2.ElseIfs>
+            <ui:IfElseIfV2.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[rutaReportes]" />
+              </Sequence>
+            </ui:IfElseIfV2.Then>
+          </ui:IfElseIfV2>
+          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\ReporteLimpio\Reporte_Final_&quot; + Now.ToString(&quot;dd_MM_yyyy_HHmm&quot;) + &quot;.xlsx&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="452,184" sap2010:WorkflowViewState.IdRef="MoveFile_2" Path="[Rutasalida]" />
         </Sequence>
-      </ui:IfElseIfV2.Else>
-      <ui:IfElseIfV2.ElseIfs>
-        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
-      </ui:IfElseIfV2.ElseIfs>
-      <ui:IfElseIfV2.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_9">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[rutaReportes]" />
-        </Sequence>
-      </ui:IfElseIfV2.Then>
-    </ui:IfElseIfV2>
-    <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt_Destino]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="587,270" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Detailed Report" WorkbookPath="[rutaReportes + &quot;\Reporte_Final_&quot; + Now.ToString(&quot;dd_MM_yyyy_HHmm&quot;) + &quot;.xlsx&quot;]" />
+      </Sequence>
+    </Sequence>
   </Sequence>
 </Activity>
