@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="i8EiJ8Y54EGb6yYVcWlNgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="hYMlVBU9Y0mrzdHcATC4sQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/login/otp" DesignTimeRectangle="1225, 582, 407, 60" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-auth-login-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-auth-otp-code-input&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;verification-code-input&amp;gt;form&amp;gt;div' tag='DIV' /&gt;" Guid="30bd531a-2512-47db-83f8-aba9bd94f0b6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="4d8e4d41f8c7cfc3fb64d55fea8224e7.jpg" xmlns="">0dK7ahAiLQU2SR4dvz2BdkA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/login/otp" DesignTimeRectangle="794, 544, 48, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="131cb324-a7e5-4daf-adb9-a0497b2b33c1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dfea6b170d0c320f725c0c645b137a3e.jpg" xmlns="">0rU6z1xFqHU2pf7qpwjp4kw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>
