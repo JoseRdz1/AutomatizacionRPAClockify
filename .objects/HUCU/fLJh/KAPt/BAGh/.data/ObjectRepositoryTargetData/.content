@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hYMlVBU9Y0mrzdHcATC4sQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/login/otp" DesignTimeRectangle="794, 544, 48, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="131cb324-a7e5-4daf-adb9-a0497b2b33c1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In - Clockify' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dfea6b170d0c320f725c0c645b137a3e.jpg" xmlns="">0rU6z1xFqHU2pf7qpwjp4kw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

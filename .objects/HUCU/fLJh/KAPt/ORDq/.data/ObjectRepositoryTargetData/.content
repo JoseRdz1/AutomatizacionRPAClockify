@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Us5RXNUiukamZ6KKbrjTNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.clockify.me/reports/summary" CVScreenId="b881cbeb-5416-41b7-9c3e-ccaf57eae8f0" CvElementArea="1106, 376, 89, 44" CvTextArea="1127, 391, 36, 14" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1107, 378, 87, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Export ' parentid='layout-main' tag='DIV' /&gt;" Guid="bff7cb8f-dff4-40fe-a18f-5444cd4ac3c7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reports • Clockify' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0618c085f8ef15168cf8ca39d9425f0b.jpg" xmlns="">0llGyQ5pokkK8P40mEYQG5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
